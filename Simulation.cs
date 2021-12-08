@@ -22,7 +22,7 @@ namespace Elevators_
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void start_button_Click(object sender, EventArgs e)
         {
 
         }
