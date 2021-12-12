@@ -32,7 +32,7 @@ namespace Elevators_
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void pause_button_Click(object sender, EventArgs e)
         {
 
         }
@@ -46,7 +46,7 @@ namespace Elevators_
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void new_human_button_Click(object sender, EventArgs e)
         {
             NewHuman form = new NewHuman();
             form.Show();
@@ -75,10 +75,30 @@ namespace Elevators_
             form.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void stop_button_Click(object sender, EventArgs e)
         {
             Statistics form = new Statistics();
             form.Show();
+        }
+
+        private void fire_alarm_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void load_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void save_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simulationTable_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -28,59 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.countOfPeople = new System.Windows.Forms.NumericUpDown();
+            this.locationFloore = new System.Windows.Forms.NumericUpDown();
+            this.destinationFloor = new System.Windows.Forms.NumericUpDown();
+            this.ok_button = new System.Windows.Forms.Button();
+            this.cancel_button = new System.Windows.Forms.Button();
             this.simulationSpeedLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countOfPeople)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationFloore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.destinationFloor)).BeginInit();
             this.SuspendLayout();
             // 
-            // numericUpDown1
+            // countOfPeople
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(94, 29);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(104, 22);
-            this.numericUpDown1.TabIndex = 0;
+            this.countOfPeople.Location = new System.Drawing.Point(94, 29);
+            this.countOfPeople.Name = "countOfPeople";
+            this.countOfPeople.Size = new System.Drawing.Size(104, 22);
+            this.countOfPeople.TabIndex = 0;
             // 
-            // numericUpDown2
+            // locationFloore
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(268, 29);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(100, 22);
-            this.numericUpDown2.TabIndex = 1;
+            this.locationFloore.Location = new System.Drawing.Point(268, 29);
+            this.locationFloore.Name = "locationFloore";
+            this.locationFloore.Size = new System.Drawing.Size(100, 22);
+            this.locationFloore.TabIndex = 1;
             // 
-            // numericUpDown3
+            // destinationFloor
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(458, 29);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(105, 22);
-            this.numericUpDown3.TabIndex = 2;
+            this.destinationFloor.Location = new System.Drawing.Point(458, 29);
+            this.destinationFloor.Name = "destinationFloor";
+            this.destinationFloor.Size = new System.Drawing.Size(105, 22);
+            this.destinationFloor.TabIndex = 2;
             // 
-            // button1
+            // ok_button
             // 
-            this.button1.Location = new System.Drawing.Point(174, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Ok";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ok_button.Location = new System.Drawing.Point(174, 57);
+            this.ok_button.Name = "ok_button";
+            this.ok_button.Size = new System.Drawing.Size(110, 23);
+            this.ok_button.TabIndex = 3;
+            this.ok_button.Text = "Ok";
+            this.ok_button.UseVisualStyleBackColor = true;
+            this.ok_button.Click += new System.EventHandler(this.ok_button_Click);
             // 
-            // button2
+            // cancel_button
             // 
-            this.button2.Location = new System.Drawing.Point(356, 57);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cancel_button.Location = new System.Drawing.Point(356, 57);
+            this.cancel_button.Name = "cancel_button";
+            this.cancel_button.Size = new System.Drawing.Size(112, 23);
+            this.cancel_button.TabIndex = 4;
+            this.cancel_button.Text = "Cancel";
+            this.cancel_button.UseVisualStyleBackColor = true;
+            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
             // simulationSpeedLabel
             // 
@@ -117,16 +117,16 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.simulationSpeedLabel);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.cancel_button);
+            this.Controls.Add(this.ok_button);
+            this.Controls.Add(this.destinationFloor);
+            this.Controls.Add(this.locationFloore);
+            this.Controls.Add(this.countOfPeople);
             this.Name = "NewHuman";
             this.Text = "NewHuman";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.countOfPeople)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationFloore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.destinationFloor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,11 +134,11 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.NumericUpDown countOfPeople;
+        private System.Windows.Forms.NumericUpDown locationFloore;
+        private System.Windows.Forms.NumericUpDown destinationFloor;
+        private System.Windows.Forms.Button ok_button;
+        private System.Windows.Forms.Button cancel_button;
         private System.Windows.Forms.Label simulationSpeedLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

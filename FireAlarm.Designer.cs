@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.firePlanDataGridView = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.add_button = new System.Windows.Forms.Button();
+            this.delete_button = new System.Windows.Forms.Button();
+            this.apply_button = new System.Windows.Forms.Button();
+            this.cancel_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.firePlanDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,54 +48,55 @@
             this.firePlanDataGridView.RowHeadersWidth = 51;
             this.firePlanDataGridView.Size = new System.Drawing.Size(774, 407);
             this.firePlanDataGridView.TabIndex = 8;
+            this.firePlanDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.firePlanDataGridView_CellContentClick);
             // 
-            // button1
+            // add_button
             // 
-            this.button1.Location = new System.Drawing.Point(61, 462);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 32);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.add_button.Location = new System.Drawing.Point(61, 462);
+            this.add_button.Name = "add_button";
+            this.add_button.Size = new System.Drawing.Size(115, 32);
+            this.add_button.TabIndex = 9;
+            this.add_button.Text = "Add";
+            this.add_button.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // delete_button
             // 
-            this.button2.Location = new System.Drawing.Point(232, 462);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 32);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
+            this.delete_button.Location = new System.Drawing.Point(232, 462);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.Size = new System.Drawing.Size(130, 32);
+            this.delete_button.TabIndex = 10;
+            this.delete_button.Text = "Delete";
+            this.delete_button.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // apply_button
             // 
-            this.button3.Location = new System.Drawing.Point(424, 462);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 32);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Apply";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.apply_button.Location = new System.Drawing.Point(424, 462);
+            this.apply_button.Name = "apply_button";
+            this.apply_button.Size = new System.Drawing.Size(122, 32);
+            this.apply_button.TabIndex = 11;
+            this.apply_button.Text = "Apply";
+            this.apply_button.UseVisualStyleBackColor = true;
+            this.apply_button.Click += new System.EventHandler(this.apply_button_Click);
             // 
-            // button4
+            // cancel_button
             // 
-            this.button4.Location = new System.Drawing.Point(615, 462);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(121, 32);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Cancel";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.cancel_button.Location = new System.Drawing.Point(615, 462);
+            this.cancel_button.Name = "cancel_button";
+            this.cancel_button.Size = new System.Drawing.Size(121, 32);
+            this.cancel_button.TabIndex = 12;
+            this.cancel_button.Text = "Cancel";
+            this.cancel_button.UseVisualStyleBackColor = true;
+            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
             // FireAlarm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 527);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cancel_button);
+            this.Controls.Add(this.apply_button);
+            this.Controls.Add(this.delete_button);
+            this.Controls.Add(this.add_button);
             this.Controls.Add(this.firePlanDataGridView);
             this.Name = "FireAlarm";
             this.Text = "FireAlarm";
@@ -107,9 +108,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView firePlanDataGridView;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button add_button;
+        private System.Windows.Forms.Button delete_button;
+        private System.Windows.Forms.Button apply_button;
+        private System.Windows.Forms.Button cancel_button;
     }
 }

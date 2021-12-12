@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.statisticsTable = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,59 +51,59 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.export_button = new System.Windows.Forms.Button();
+            this.cancel_button = new System.Windows.Forms.Button();
+            this.statisticsTable.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // statisticsTable
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.statisticsTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.45242F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.54758F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.label12, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label13, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label14, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label15, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label16, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label17, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label18, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label19, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.label20, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.label21, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.label22, 1, 10);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(23, 8);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 11;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.093297F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(616, 474);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.statisticsTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.statisticsTable.ColumnCount = 2;
+            this.statisticsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.45242F));
+            this.statisticsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.54758F));
+            this.statisticsTable.Controls.Add(this.label1, 0, 0);
+            this.statisticsTable.Controls.Add(this.label2, 0, 1);
+            this.statisticsTable.Controls.Add(this.label3, 0, 2);
+            this.statisticsTable.Controls.Add(this.label4, 0, 3);
+            this.statisticsTable.Controls.Add(this.label5, 0, 4);
+            this.statisticsTable.Controls.Add(this.label6, 0, 5);
+            this.statisticsTable.Controls.Add(this.label7, 0, 6);
+            this.statisticsTable.Controls.Add(this.label8, 0, 7);
+            this.statisticsTable.Controls.Add(this.label9, 0, 8);
+            this.statisticsTable.Controls.Add(this.label10, 0, 9);
+            this.statisticsTable.Controls.Add(this.label11, 0, 10);
+            this.statisticsTable.Controls.Add(this.label12, 1, 0);
+            this.statisticsTable.Controls.Add(this.label13, 1, 1);
+            this.statisticsTable.Controls.Add(this.label14, 1, 2);
+            this.statisticsTable.Controls.Add(this.label15, 1, 3);
+            this.statisticsTable.Controls.Add(this.label16, 1, 4);
+            this.statisticsTable.Controls.Add(this.label17, 1, 5);
+            this.statisticsTable.Controls.Add(this.label18, 1, 6);
+            this.statisticsTable.Controls.Add(this.label19, 1, 7);
+            this.statisticsTable.Controls.Add(this.label20, 1, 8);
+            this.statisticsTable.Controls.Add(this.label21, 1, 9);
+            this.statisticsTable.Controls.Add(this.label22, 1, 10);
+            this.statisticsTable.Location = new System.Drawing.Point(23, 8);
+            this.statisticsTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.statisticsTable.Name = "statisticsTable";
+            this.statisticsTable.RowCount = 11;
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090567F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.093297F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.statisticsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.statisticsTable.Size = new System.Drawing.Size(616, 474);
+            this.statisticsTable.TabIndex = 1;
             // 
             // label1
             // 
@@ -317,44 +317,45 @@
             this.label22.Size = new System.Drawing.Size(212, 17);
             this.label22.TabIndex = 21;
             // 
-            // button1
+            // export_button
             // 
-            this.button1.Location = new System.Drawing.Point(114, 501);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Export";
-            this.button1.UseVisualStyleBackColor = true;
+            this.export_button.Location = new System.Drawing.Point(114, 501);
+            this.export_button.Name = "export_button";
+            this.export_button.Size = new System.Drawing.Size(107, 38);
+            this.export_button.TabIndex = 2;
+            this.export_button.Text = "Export";
+            this.export_button.UseVisualStyleBackColor = true;
+            this.export_button.Click += new System.EventHandler(this.export_button_Click);
             // 
-            // button2
+            // cancel_button
             // 
-            this.button2.Location = new System.Drawing.Point(408, 501);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 38);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cancel_button.Location = new System.Drawing.Point(408, 501);
+            this.cancel_button.Name = "cancel_button";
+            this.cancel_button.Size = new System.Drawing.Size(107, 38);
+            this.cancel_button.TabIndex = 3;
+            this.cancel_button.Text = "Cancel";
+            this.cancel_button.UseVisualStyleBackColor = true;
+            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
             // Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 551);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.cancel_button);
+            this.Controls.Add(this.export_button);
+            this.Controls.Add(this.statisticsTable);
             this.Name = "Statistics";
             this.Text = "Statistics";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.statisticsTable.ResumeLayout(false);
+            this.statisticsTable.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel statisticsTable;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -377,7 +378,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button export_button;
+        private System.Windows.Forms.Button cancel_button;
     }
 }

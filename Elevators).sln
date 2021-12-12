@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elevators)", "Elevators).csproj", "{8054161D-472A-4911-B138-6567B55657A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Views", "Views.csproj", "{8054161D-472A-4911-B138-6567B55657A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presenters", "..\Presenters\Presenters.csproj", "{294A480C-0CA9-46E7-A9D3-588076CEBE5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\Models\Models.csproj", "{872D021D-127D-41B5-8E79-DE09CB99E309}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{8054161D-472A-4911-B138-6567B55657A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8054161D-472A-4911-B138-6567B55657A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8054161D-472A-4911-B138-6567B55657A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{294A480C-0CA9-46E7-A9D3-588076CEBE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294A480C-0CA9-46E7-A9D3-588076CEBE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294A480C-0CA9-46E7-A9D3-588076CEBE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294A480C-0CA9-46E7-A9D3-588076CEBE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{872D021D-127D-41B5-8E79-DE09CB99E309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872D021D-127D-41B5-8E79-DE09CB99E309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872D021D-127D-41B5-8E79-DE09CB99E309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872D021D-127D-41B5-8E79-DE09CB99E309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

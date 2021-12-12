@@ -22,12 +22,12 @@ namespace Elevators_
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cancel_button_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void apply_button_Click(object sender, EventArgs e)
         {
             this.Close();
         }

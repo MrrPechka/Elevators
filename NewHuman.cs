@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Presenters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,19 +11,28 @@ using System.Windows.Forms;
 
 namespace Elevators_
 {
-    public partial class NewHuman : Form
+    public partial class NewHuman : Form, ICreateHumanAction
     {
+        public event Action<int, int, int> CreateHuman;
         public NewHuman()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ok_button_Click(object sender, EventArgs e)
         {
+            try
+            {
+                this.CreateHuman?.Invoke((int)countOfPeople.Value, (int)locationFloore.Value, (int)destinationFloor.Value);
+            }
+            catch(Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void cancel_button_Click(object sender, EventArgs e)
         {
             this.Close();
         }

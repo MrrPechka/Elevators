@@ -38,8 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cancel_button = new System.Windows.Forms.Button();
+            this.apply_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.liftCapacitySelecter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -163,33 +163,33 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Number of floors";
             // 
-            // button1
+            // cancel_button
             // 
-            this.button1.Location = new System.Drawing.Point(169, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 29);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cancel_button.Location = new System.Drawing.Point(169, 180);
+            this.cancel_button.Name = "cancel_button";
+            this.cancel_button.Size = new System.Drawing.Size(79, 29);
+            this.cancel_button.TabIndex = 19;
+            this.cancel_button.Text = "Cancel";
+            this.cancel_button.UseVisualStyleBackColor = true;
+            this.cancel_button.Click += new System.EventHandler(this.cancel_button_Click);
             // 
-            // button2
+            // apply_button
             // 
-            this.button2.Location = new System.Drawing.Point(47, 180);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 29);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Apply";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.apply_button.Location = new System.Drawing.Point(47, 180);
+            this.apply_button.Name = "apply_button";
+            this.apply_button.Size = new System.Drawing.Size(79, 29);
+            this.apply_button.TabIndex = 20;
+            this.apply_button.Text = "Apply";
+            this.apply_button.UseVisualStyleBackColor = true;
+            this.apply_button.Click += new System.EventHandler(this.apply_button_Click);
             // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(308, 245);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.apply_button);
+            this.Controls.Add(this.cancel_button);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -224,7 +224,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button cancel_button;
+        private System.Windows.Forms.Button apply_button;
     }
 }
