@@ -35,13 +35,6 @@
             this.simulationSpeedLabel = new System.Windows.Forms.Label();
             this.new_human_button = new System.Windows.Forms.Button();
             this.fire_alarm_button = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.load_button = new System.Windows.Forms.Button();
             this.save_button = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -51,7 +44,6 @@
             this.statusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.simulationTable = new System.Windows.Forms.TableLayoutPanel();
             this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.simulationTable.SuspendLayout();
@@ -128,90 +120,6 @@
             this.fire_alarm_button.UseVisualStyleBackColor = true;
             this.fire_alarm_button.Click += new System.EventHandler(this.fire_alarm_button_Click);
             // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(19, 57);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(16, 17);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "4";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(562, 1);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 16);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Elevator 2";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(372, 1);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 16);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Elevator 1";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(7, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 16);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Floor";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label8.Location = new System.Drawing.Point(19, 351);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 17);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "1";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(19, 259);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(16, 17);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "2";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6.Location = new System.Drawing.Point(19, 157);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(16, 17);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "3";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // load_button
             // 
             this.load_button.Location = new System.Drawing.Point(2, 368);
@@ -238,7 +146,7 @@
             this.settingsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(932, 28);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -249,28 +157,28 @@
             this.settingToolStripMenuItem,
             this.statusToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.settingsToolStripMenuItem.Text = "More";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // fireAlarmToolStripMenuItem
             // 
             this.fireAlarmToolStripMenuItem.Name = "fireAlarmToolStripMenuItem";
-            this.fireAlarmToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fireAlarmToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.fireAlarmToolStripMenuItem.Text = "Fire alarm";
             this.fireAlarmToolStripMenuItem.Click += new System.EventHandler(this.fireAlarmToolStripMenuItem_Click);
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.settingToolStripMenuItem.Text = "Setting";
             this.settingToolStripMenuItem.Click += new System.EventHandler(this.settingToolStripMenuItem_Click);
             // 
             // statusToolStripMenuItem
             // 
             this.statusToolStripMenuItem.Name = "statusToolStripMenuItem";
-            this.statusToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.statusToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.statusToolStripMenuItem.Text = "Status";
             this.statusToolStripMenuItem.Click += new System.EventHandler(this.statusToolStripMenuItem_Click);
             // 
@@ -284,26 +192,18 @@
             this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.15266F));
             this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.84734F));
             this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 204F));
-            this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
-            this.simulationTable.Controls.Add(this.label8, 0, 4);
-            this.simulationTable.Controls.Add(this.label5, 0, 1);
-            this.simulationTable.Controls.Add(this.label7, 0, 3);
+            this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 175F));
             this.simulationTable.Controls.Add(this.label24, 1, 1);
-            this.simulationTable.Controls.Add(this.label6, 0, 2);
-            this.simulationTable.Controls.Add(this.label4, 3, 0);
-            this.simulationTable.Controls.Add(this.label3, 2, 0);
-            this.simulationTable.Controls.Add(this.label1, 0, 0);
-            this.simulationTable.Controls.Add(this.label23, 1, 0);
             this.simulationTable.Location = new System.Drawing.Point(102, 38);
             this.simulationTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simulationTable.Name = "simulationTable";
             this.simulationTable.RowCount = 5;
-            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.20118F));
-            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.79881F));
-            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 102F));
-            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.simulationTable.Size = new System.Drawing.Size(686, 401);
+            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 119F));
+            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 107F));
+            this.simulationTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.simulationTable.Size = new System.Drawing.Size(818, 517);
             this.simulationTable.TabIndex = 12;
             this.simulationTable.Paint += new System.Windows.Forms.PaintEventHandler(this.simulationTable_Paint);
             // 
@@ -311,27 +211,17 @@
             // 
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(57, 57);
+            this.label24.Location = new System.Drawing.Point(79, 116);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(245, 17);
+            this.label24.Size = new System.Drawing.Size(353, 17);
             this.label24.TabIndex = 20;
-            // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(125, 1);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(108, 16);
-            this.label23.TabIndex = 19;
-            this.label23.Text = "Count of people";
             // 
             // Simulation
             // 
             this.AccessibleName = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(932, 566);
             this.Controls.Add(this.simulationTable);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.load_button);
@@ -368,13 +258,6 @@
         private System.Windows.Forms.Button fire_alarm_button;
         private System.Windows.Forms.Button load_button;
         private System.Windows.Forms.Button save_button;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fireAlarmToolStripMenuItem;
@@ -382,6 +265,5 @@
         private System.Windows.Forms.ToolStripMenuItem statusToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel simulationTable;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
     }
 }

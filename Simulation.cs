@@ -15,6 +15,7 @@ namespace Elevators_
         public Simulation()
         {
             InitializeComponent();
+            InitTable();
         }
 
         private void Simulation_Load(object sender, EventArgs e)
@@ -99,6 +100,35 @@ namespace Elevators_
         private void simulationTable_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private Label CreateTable(string str)
+        {
+            Label label = new Label
+            {
+                Text = str,
+                TextAlign = ContentAlignment.MiddleCenter,
+                AutoSize = true,
+                Anchor = AnchorStyles.Right | AnchorStyles.Left
+            };
+            label.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(204)));
+            return label;
+        }
+
+        private void InitTable()
+        {
+            for (int i = 1; i < this.simulationTable.RowCount; i++)
+                this.simulationTable.Controls.Add(CreateTable(i.ToString()), 0, this.simulationTable.RowCount - i);
+
+            this.simulationTable.Controls.Add(CreateTable("Floor"), 0, 0);
+            this.simulationTable.Controls.Add(CreateTable("Count of people"), 1, 0);
+
+            for (int i = 2; i < this.simulationTable.ColumnCount; i++)
+                this.simulationTable.Controls.Add(CreateTable("Elevator" + (i - 1)), i, 0);
+
+            for (int i = 1; i < this.simulationTable.RowCount; i++)
+                for (int j = 1; j < this.simulationTable.ColumnCount; j++)
+                    this.simulationTable.Controls.Add(CreateTable(""), j, i);
         }
     }
 }
