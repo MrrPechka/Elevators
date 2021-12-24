@@ -68,11 +68,11 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Simulation.cs">
+    <Compile Include="SimulationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Simulation.Designer.cs">
-      <DependentUpon>Simulation.cs</DependentUpon>
+    <Compile Include="SimulationForm.Designer.cs">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Statistics.cs">
       <SubType>Form</SubType>
@@ -104,8 +104,8 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Simulation.resx">
-      <DependentUpon>Simulation.cs</DependentUpon>
+    <EmbeddedResource Include="SimulationForm.resx">
+      <DependentUpon>SimulationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Statistics.resx">
       <DependentUpon>Statistics.cs</DependentUpon>

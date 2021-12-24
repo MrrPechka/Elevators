@@ -1,6 +1,6 @@
 ﻿namespace Elevators_
 {
-    partial class Simulation
+    partial class SimulationForm
     {
         /// <summary>
         /// Required designer variable.

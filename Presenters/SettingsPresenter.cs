@@ -11,9 +11,9 @@ namespace Presenters
     {
         private ISettingsService _settingsService;
         private ISettingsView _view;
-        private IService _service;
+        private IMainService _service;
 
-        public SettingsPresenter(ISettingsView view, ISettingsService settingsService, IService service)
+        public SettingsPresenter(ISettingsView view, ISettingsService settingsService, IMainService service)
         {
             _view = view;
             _settingsService = settingsService;

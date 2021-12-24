@@ -10,7 +10,7 @@ namespace Models
     public class Simulation : ISimulation
     {
         protected SystemData systemData;
-        protected IService service;
+        protected IMainService mainService;
         bool stop = true;
 
         public Simulation(int floorsNumber, int elevatorsNumber)
@@ -23,7 +23,10 @@ namespace Models
             settings.ElevatorsSize = 7;
             systemData = new SystemData(settings);
         }
-
+        public void SetService(IMainService mainService)
+        {
+            this.mainService = mainService;
+        }
         public void Start()
         {
             if (stop)
@@ -50,14 +53,9 @@ namespace Models
         }
 
         public SystemData GetSystemData() => systemData;
-        public void SetService(IService service)
+        public IMainService GetService()
         {
-            this.service = service;
-        }
-
-        public IService GetService()
-        {
-            return service;
+            return mainService;
         }
     }
 }

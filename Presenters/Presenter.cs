@@ -10,13 +10,14 @@ namespace Presenters
 {
     public class Presenter
     {
-        private IService _service;
-        private IView _view;
+        private IMainService _service;
+        private IMainView _view;
 
-        public Presenter(IService service, IView view)
+        public Presenter(IMainView view, IMainService service)
         {
             _service = service;
             _view = view;
+            InitEvents();
         }
         private void InitEvents()
         {

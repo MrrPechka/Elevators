@@ -26,7 +26,7 @@ namespace Models
             return settings;
         }
 
-        public void NewHuman(int number, int locationFloor, int destinationFloor)
+        public void CreateHuman(int number, int locationFloor, int destinationFloor)
         {
             CreateHuman createHuman = new CreateHuman(number, locationFloor, destinationFloor);
         }

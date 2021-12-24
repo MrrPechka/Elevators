@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Models;
+using Presenters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Elevators_
 {
-    public partial class Settings : Form
+    public partial class Settings : Form, ISettingsView
     {
         public Settings()
         {
@@ -30,6 +32,18 @@ namespace Elevators_
         private void apply_button_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        public void ShowForm()
+        {
+            this.Show();
+        }
+        public void CloseForm()
+        {
+            this.Close();
+        }
+        public void LoadCurrentParameters(ISettings settings)
+        {
+
         }
     }
 }

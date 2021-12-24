@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models.Service
 {
-    public class SettingsService //: ISettingsService
+    public class SettingsService : ISettingsService
     {
         private SystemData systemData;
         public SettingsService(SystemData systemData)

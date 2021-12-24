@@ -15,7 +15,7 @@ namespace Models
         public void SetSpeed(decimal speed);
         public bool IsStoped();
         public SystemData GetSystemData();
-        IService GetService();
-        public void SetService(IService service);
+        IMainService GetService();
+        public void SetService(IMainService service);
     }
 }

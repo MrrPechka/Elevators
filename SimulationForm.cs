@@ -14,18 +14,26 @@ using System.Windows.Forms;
 
 namespace Elevators_
 {
-    public partial class Simulation : Form
+    public partial class SimulationForm : Form, IMainView
     {
         private ISimulation simulation;
-        public Simulation()
+        private bool isSimulationLoaded = false;
+        public SimulationForm()
         {
             InitializeComponent();
             InitTable();
+            InitSimulation();
         }
 
         public event Action StartSimulation;
-        public event Action<decimal> SetSimulationSpeed;
-
+        public event Action PauseSimulation;
+        public event IMainView.Status StopSimulation;
+        public event Action<decimal> SetSpeed;
+        private delegate void UpdateStatus(SystemData systemData);
+        
+        public void ShowStatus(SystemData systemData) {
+            
+        }
         private void Simulation_Load(object sender, EventArgs e)
         {
 
@@ -46,7 +54,7 @@ namespace Elevators_
         private void new_human_button_Click(object sender, EventArgs e)
         {
             NewHuman form = new NewHuman();
-            //new NewHumanPresenter(form, new HumanCreateService(simulation.GetSystemData()));
+            new NewHumanPresenter(form, new HumanCreateService(simulation.GetSystemData()));
             form.Show();
         }
         private void statusToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,7 +72,7 @@ namespace Elevators_
         private void settingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Settings form = new Settings();
-          //
+            SettingsPresenter settingsPresenter = new SettingsPresenter(form, new SettingsService(simulation.GetSystemData()), simulation.GetService());
             form.Show();
         }
 
@@ -92,6 +100,16 @@ namespace Elevators_
         private void simulationTable_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public void InitSimulation()
+        {
+            if (!isSimulationLoaded)
+            {
+                simulation = new Simulation(5, 2);
+                _ = new Presenter(this, new Service(simulation));
+                isSimulationLoaded = true;
+            }
         }
 
         private Label CreateTable(string str)
@@ -192,10 +210,17 @@ namespace Elevators_
                 }
             }
         }
-
         private void SimulationSpeed(object sender, EventArgs e)
         {
-            this.SetSimulationSpeed?.Invoke(Speed.Value);
+            this.SetSpeed?.Invoke(Speed.Value);
+        }
+        public void ShowForm()
+        {
+            this.Show();
+        }
+        public void CloseForm()
+        {
+            this.Close();
         }
     }
 }

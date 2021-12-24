@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presenters
 {
-    public interface ICreateHumanAction
+    public interface ICreateHumanAction : IView
     {
         event Action<int, int, int> CreateHuman;
     }

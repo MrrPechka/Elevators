@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Models.Service
 {
-    public class Service
+    public class Service : IMainService
     {
         private readonly ISimulation simulation;
+
+        public event Action<SystemData> UpdateSystemData;
+
         public Service(ISimulation simulation)
         {
             this.simulation = simulation;
@@ -29,13 +32,21 @@ namespace Models.Service
         {
             return simulation.Stop();
         }
-        public void SetSimulationSpeed(decimal speed)
+        public void SetSpeed(decimal speed)
         {
             simulation.SetSpeed(speed);
         }
         public bool IsStoped()
         {
             return simulation.IsStoped();
+        }
+        public void ShowData(SystemData data)
+        {
+            this.UpdateSystemData.Invoke(data);
+        }
+        public SystemData ShowCurrentState()
+        {
+            return simulation.GetSystemData();
         }
     }
 }

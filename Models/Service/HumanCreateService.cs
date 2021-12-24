@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Models.Service;
 
 namespace Models.Services
 {
-    public class HumanCreateService : Service.IHumanCreateService
+    public class HumanCreateService : IHumanCreateService
     {
         private SystemData systemData;
         Type type;
@@ -22,7 +23,7 @@ namespace Models.Services
         {
             if (locationFloor == destinationFloor)
                 throw new Exception("This is stupid");
-            this.CreateHuman(number, locationFloor, destinationFloor);
+            systemData.CreateHuman(number, locationFloor, destinationFloor);
         }
     }
 }

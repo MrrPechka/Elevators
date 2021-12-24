@@ -36,5 +36,13 @@ namespace Elevators_
         {
             this.Close();
         }
+        public void ShowForm()
+        {
+            this.Show();
+        }
+        public void CloseForm()
+        {
+            this.Close();
+        }
     }
 }
