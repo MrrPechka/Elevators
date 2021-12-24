@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8054161D-472A-4911-B138-6567B55657A5}</ProjectGuid>
+    <ProjectGuid>{023277F5-9426-4E22-AB0C-7B8CA8EFC1F1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Elevators_</RootNamespace>
-    <AssemblyName>Elevators%29</AssemblyName>
+    <RootNamespace>Models</RootNamespace>
+    <AssemblyName>Models</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,50 +48,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FireAlarm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FireAlarm.Designer.cs">
-      <DependentUpon>FireAlarm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewHuman.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewHuman.Designer.cs">
-      <DependentUpon>NewHuman.cs</DependentUpon>
-    </Compile>
+    <Compile Include="CreateHuman.cs" />
+    <Compile Include="FactoryOfHumans.cs" />
+    <Compile Include="Human.cs" />
+    <Compile Include="ISettings.cs" />
+    <Compile Include="ISimulation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simulation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simulation.Designer.cs">
-      <DependentUpon>Simulation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Statistics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Statistics.Designer.cs">
-      <DependentUpon>Statistics.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Status.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Status.Designer.cs">
-      <DependentUpon>Status.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="FireAlarm.resx">
-      <DependentUpon>FireAlarm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewHuman.resx">
-      <DependentUpon>NewHuman.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Service\HumanCreateService.cs" />
+    <Compile Include="Service\IHumanCreateService.cs" />
+    <Compile Include="Service\IService.cs" />
+    <Compile Include="Service\ISettingsService.cs" />
+    <Compile Include="Service\Service.cs" />
+    <Compile Include="Service\SettingsService.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Simulation.cs" />
+    <Compile Include="SystemData.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -101,18 +73,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Simulation.resx">
-      <DependentUpon>Simulation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Statistics.resx">
-      <DependentUpon>Statistics.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Status.resx">
-      <DependentUpon>Status.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,16 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Models\Models.csproj">
-      <Project>{023277F5-9426-4E22-AB0C-7B8CA8EFC1F1}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="Presenters\Presenters.csproj">
-      <Project>{ECCA52BA-DC97-40E5-83C3-ADFAA307031B}</Project>
-      <Name>Presenters</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

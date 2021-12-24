@@ -46,7 +46,7 @@ namespace Elevators_
         private void new_human_button_Click(object sender, EventArgs e)
         {
             NewHuman form = new NewHuman();
-            new NewHumanPresenter(form, new HumanCreateService(simulation.GetSystemData()));
+            //new NewHumanPresenter(form, new HumanCreateService(simulation.GetSystemData()));
             form.Show();
         }
         private void statusToolStripMenuItem_Click(object sender, EventArgs e)
