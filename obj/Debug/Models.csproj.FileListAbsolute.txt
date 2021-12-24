@@ -1,0 +1,8 @@
+C:\Users\Asus\source\repos\Models\obj\Debug\Models.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\Models\obj\Debug\Models.Properties.Resources.resources
+C:\Users\Asus\source\repos\Models\obj\Debug\Models.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\Models\bin\Debug\Models.exe.config
+C:\Users\Asus\source\repos\Models\bin\Debug\Models.exe
+C:\Users\Asus\source\repos\Models\bin\Debug\Models.pdb
+C:\Users\Asus\source\repos\Models\obj\Debug\Models.exe
+C:\Users\Asus\source\repos\Models\obj\Debug\Models.pdb
