@@ -31,7 +31,7 @@
             this.start_button = new System.Windows.Forms.Button();
             this.stop_button = new System.Windows.Forms.Button();
             this.pause_button = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.Speed = new System.Windows.Forms.NumericUpDown();
             this.simulationSpeedLabel = new System.Windows.Forms.Label();
             this.new_human_button = new System.Windows.Forms.Button();
             this.fire_alarm_button = new System.Windows.Forms.Button();
@@ -43,10 +43,8 @@
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.simulationTable = new System.Windows.Forms.TableLayoutPanel();
-            this.label24 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Speed)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.simulationTable.SuspendLayout();
             this.SuspendLayout();
             // 
             // start_button
@@ -79,17 +77,18 @@
             this.pause_button.UseVisualStyleBackColor = true;
             this.pause_button.Click += new System.EventHandler(this.pause_button_Click);
             // 
-            // numericUpDown1
+            // Speed
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(0, 186);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(75, 22);
-            this.numericUpDown1.TabIndex = 5;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.Speed.Location = new System.Drawing.Point(0, 186);
+            this.Speed.Name = "Speed";
+            this.Speed.Size = new System.Drawing.Size(75, 22);
+            this.Speed.TabIndex = 5;
+            this.Speed.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            this.Speed.ValueChanged += new System.EventHandler(this.SimulationSpeed);
             // 
             // simulationSpeedLabel
             // 
@@ -159,7 +158,6 @@
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.settingsToolStripMenuItem.Text = "More";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // fireAlarmToolStripMenuItem
             // 
@@ -192,8 +190,7 @@
             this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.15266F));
             this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.84734F));
             this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 204F));
-            this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 175F));
-            this.simulationTable.Controls.Add(this.label24, 1, 1);
+            this.simulationTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
             this.simulationTable.Location = new System.Drawing.Point(102, 38);
             this.simulationTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simulationTable.Name = "simulationTable";
@@ -207,15 +204,6 @@
             this.simulationTable.TabIndex = 12;
             this.simulationTable.Paint += new System.Windows.Forms.PaintEventHandler(this.simulationTable_Paint);
             // 
-            // label24
-            // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(79, 116);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(353, 17);
-            this.label24.TabIndex = 20;
-            // 
             // Simulation
             // 
             this.AccessibleName = "";
@@ -228,7 +216,7 @@
             this.Controls.Add(this.fire_alarm_button);
             this.Controls.Add(this.new_human_button);
             this.Controls.Add(this.simulationSpeedLabel);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.Speed);
             this.Controls.Add(this.pause_button);
             this.Controls.Add(this.stop_button);
             this.Controls.Add(this.start_button);
@@ -237,11 +225,9 @@
             this.Name = "Simulation";
             this.Text = "Simulation";
             this.Load += new System.EventHandler(this.Simulation_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Speed)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.simulationTable.ResumeLayout(false);
-            this.simulationTable.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,7 +238,7 @@
         private System.Windows.Forms.Button start_button;
         private System.Windows.Forms.Button stop_button;
         private System.Windows.Forms.Button pause_button;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown Speed;
         private System.Windows.Forms.Label simulationSpeedLabel;
         private System.Windows.Forms.Button new_human_button;
         private System.Windows.Forms.Button fire_alarm_button;
@@ -264,6 +250,5 @@
         private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem statusToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel simulationTable;
-        private System.Windows.Forms.Label label24;
     }
 }

@@ -127,6 +127,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{872D021D-127D-41B5-8E79-DE09CB99E309}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Presenters\Presenters.csproj">
       <Project>{294A480C-0CA9-46E7-A9D3-588076CEBE5D}</Project>
       <Name>Presenters</Name>
