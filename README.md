@@ -21,4 +21,4 @@
 
 В строке статуса приложения (Status bar) должно отображаться время, прошедшее с начала старта системы и количество перевезённых лифтами человек за весь сеанс работы.
 ![изображение](https://user-images.githubusercontent.com/71975109/147378721-212adef1-e71c-4f08-a85f-c5c0c87b8186.png)
-![изображение](https://user-images.githubusercontent.com/71975109/147378736-194a3669-2926-43e9-bb7d-3c2049a4afc2.png)
+![изображение](https://user-images.githubusercontent.com/71975109/147379903-f5dcae1e-6728-4d20-a740-d2fe060f76e0.png)
