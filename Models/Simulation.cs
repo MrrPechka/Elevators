@@ -1,4 +1,5 @@
-﻿using Models.Service;
+﻿using Models.ElevatorManager;
+using Models.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Models
         protected IMainService mainService;
         bool stop = true;
 
-        public Simulation(int floorsNumber, int elevatorsNumber)
+        public Simulation(int floorsNumber, int elevatorsNumber, IElevatorManager manage)
         {
             ISettings settings = new Settings();
             settings.ElevatorsNumber = elevatorsNumber;
@@ -21,6 +22,7 @@ namespace Models
             settings.SecondsToMove = 2;
             settings.SecondsToWait = 2;
             settings.ElevatorsSize = 7;
+            settings.ElevatorManager = manage;
             systemData = new SystemData(settings);
         }
         public void SetService(IMainService mainService)

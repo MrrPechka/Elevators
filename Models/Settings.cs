@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models.ElevatorManager;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,6 @@ namespace Models
         public int FloorsNumber { get; set; }
         public int SecondsToWait { get; set; }
         public int SecondsToMove { get; set; }
+        public IElevatorManager ElevatorManager { get; set; }
     }
 }

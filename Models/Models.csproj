@@ -50,6 +50,9 @@
   <ItemGroup>
     <Compile Include="CreateHuman.cs" />
     <Compile Include="Elevator.cs" />
+    <Compile Include="ElevatorManager\Context.cs" />
+    <Compile Include="ElevatorManager\IElevatorManager.cs" />
+    <Compile Include="ElevatorManager\MinWaitingTimeLiftManager.cs" />
     <Compile Include="FactoryOfHumans.cs" />
     <Compile Include="Floor.cs" />
     <Compile Include="Human.cs" />

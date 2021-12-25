@@ -1,4 +1,5 @@
 ﻿using Models;
+using Models.ElevatorManager;
 using Models.Service;
 using Models.Services;
 using Presenters;
@@ -155,7 +156,7 @@ namespace Elevators_
         {
             if (!isSimulationLoaded)
             {
-                simulation = new Simulation(5, 2);
+                simulation = new Simulation(5, 2, new MinWaitingTimeElevatorManager());
                 _ = new Presenter(this, new Service(simulation));
                 isSimulationLoaded = true;
             }
@@ -187,7 +188,7 @@ namespace Elevators_
 
             for (int i = 1; i < this.simulationTable.RowCount; i++)
                 for (int j = 1; j < this.simulationTable.ColumnCount; j++)
-                    this.simulationTable.Controls.Add(CreateTable(""), j, i);
+                    this.simulationTable.Controls.Add(CreateTable("0"), j, i);
         }
 
         private void ResizeTable(int row, int column)
