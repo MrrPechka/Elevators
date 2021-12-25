@@ -22,7 +22,7 @@ namespace Presenters
         private void InitEvents()
         {
             _view.StartSimulation += this.StartSimulation;
-            //_view.StopSimulation += this.StopSimulation;
+            _view.StopSimulation += this.StopSimulation;
             _view.PauseSimulation += this.PauseSimulation;
             _view.SetSpeed += this.SetSpeed;
             _service.UpdateSystemData += this.ShowData;

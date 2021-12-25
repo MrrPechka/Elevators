@@ -17,7 +17,7 @@ namespace Models
         {
             ISettings settings = new Settings();
             settings.ElevatorsNumber = elevatorsNumber;
-            settings.FloorsNumber = elevatorsNumber;
+            settings.FloorsNumber = floorsNumber;
             settings.SecondsToMove = 2;
             settings.SecondsToWait = 2;
             settings.ElevatorsSize = 7;

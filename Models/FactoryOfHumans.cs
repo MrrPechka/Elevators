@@ -10,14 +10,14 @@ namespace Models
     {
         public int number;
         public int destinationFloor;
-        public int floor;
+        public readonly Floor floor;
 
-        public FactoryOfHumans(int number, int destinationFloor, int floor)
+        public FactoryOfHumans(int number, int destinationFloor, Floor floor)
         {
             this.number = number;
             this.destinationFloor = destinationFloor;
 
-            if (floor == 0)
+            if (floor == null)
                 return;
             this.floor = floor;
         }

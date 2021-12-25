@@ -17,5 +17,9 @@ namespace Models.Service
         {
             return systemData.GetSettings();
         }
+        public void SaveSystemParameters(ISettings settings)
+        {
+            systemData.SetSettings(settings);
+        }
     }
 }

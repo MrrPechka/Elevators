@@ -29,8 +29,57 @@ namespace Elevators_
         public event Action PauseSimulation;
         public event IMainView.Status StopSimulation;
         public event Action<decimal> SetSpeed;
-        private delegate void UpdateStatus(SystemData systemData);
-        
+        private delegate void UpdateState(SystemData systemData);
+
+        public void ShowState(SystemData systemData)
+        {
+            if (simulationTable.InvokeRequired)
+                simulationTable.Invoke(new UpdateState(ShowStateInForm), systemData);
+            else ShowStateInForm(systemData);
+        }
+        public void ShowStateInForm(SystemData systemData) 
+        {
+            int[] a = new int[systemData.GetSettings().FloorsNumber];
+            int[] b = new int[systemData.GetSettings().FloorsNumber];
+            int[] c = new int[systemData.GetSettings().FloorsNumber];
+            Color[] d = new Color[b.Length];
+            if (this.simulationTable.RowCount != a.Length + 1 || this.simulationTable.ColumnCount != b.Length + 2)
+            {
+                this.simulationTable.SuspendLayout();
+                this.ResizeTable(a.Length + 1, b.Length + 2);
+                this.simulationTable.ResumeLayout(false);
+                this.simulationTable.PerformLayout();
+            }
+            int i = 0;   
+            foreach (Floor floor in systemData.GetFloor())
+            {
+                a[i] = floor.getFullHumanCount();
+                i++;
+            }
+            i = 0;
+            foreach (Elevator elevator in systemData.GetElevator())
+            {
+                c[i] = elevator.GetKeepeFloor();
+                b[i] = elevator.GetHumanCount();
+                d[i] = elevator.status == Elevator.ElevatorStatus.WaitOpened ? Color.Green : Color.Red;
+                i++;
+            }
+            for (int j = this.simulationTable.RowCount - 1; j > 0; j--)
+            {
+                Control control = this.simulationTable.GetControlFromPosition(1, j);
+                if (control != null)
+                    control.Text = a[this.simulationTable.RowCount - j - 1].ToString();
+                else MessageBox.Show("I'm sorry, please try again");
+                for (i = 2; i < this.simulationTable.ColumnCount; i++)
+                {
+                    Control controli = this.simulationTable.GetControlFromPosition(i, j);
+                    controli.Text = (this.simulationTable.RowCount - j - 1 == c[i - 2]) ? b[i - 2].ToString() : null;
+                    controli.Dock = DockStyle.Fill;
+                    controli.BackColor = (this.simulationTable.RowCount - j - 1 == c[i - 2]) ? d[i - 2] : Color.Transparent;
+                }
+            }
+        }
+
         public void ShowStatus(SystemData systemData) {
             
         }

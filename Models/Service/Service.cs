@@ -11,6 +11,7 @@ namespace Models.Service
         private readonly ISimulation simulation;
 
         public event Action<SystemData> UpdateSystemData;
+        public event Action<int> UpdateNumberOfCarriedHumans;
 
         public Service(ISimulation simulation)
         {
@@ -47,6 +48,10 @@ namespace Models.Service
         public SystemData ShowCurrentState()
         {
             return simulation.GetSystemData();
+        }
+        public void UpdateCarriedHumans(int number)
+        {
+            this.UpdateNumberOfCarriedHumans.Invoke(number);
         }
     }
 }

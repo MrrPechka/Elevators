@@ -55,7 +55,7 @@
             this.liftCapacitySelecter.Size = new System.Drawing.Size(98, 22);
             this.liftCapacitySelecter.TabIndex = 9;
             this.liftCapacitySelecter.Value = new decimal(new int[] {
-            10,
+            1,
             0,
             0,
             0});

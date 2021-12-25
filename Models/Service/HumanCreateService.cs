@@ -16,7 +16,7 @@ namespace Models.Services
         public HumanCreateService(SystemData systemData)
         {
             this.systemData = systemData;
-            type = new FactoryOfHumans(0, 1, int.MaxValue).GetType();
+            type = new FactoryOfHumans(0, 1, null).GetType();
         }
 
         public void CreateHuman(int number, int locationFloor, int destinationFloor)

@@ -8,6 +8,7 @@ namespace Models.Service
 {
     public interface ISettingsService : IService
     {
+        public void SaveSystemParameters(ISettings settings);
         public ISettings GetSettings();
     }
 }

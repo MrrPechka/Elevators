@@ -8,6 +8,6 @@ namespace Models
 {
     public class CreateHuman : FactoryOfHumans
     {
-        public CreateHuman(int number, int destinationFloor, int floor) : base(number, destinationFloor,floor) { }
+        public CreateHuman(int number, int destinationFloor, Floor floor) : base(number, destinationFloor,floor) { }
     }
 }

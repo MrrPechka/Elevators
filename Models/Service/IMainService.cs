@@ -16,7 +16,9 @@ namespace Models.Service
         void ShowData(SystemData data);
         SystemData GetSystemData();
         bool IsStoped();
+        public void UpdateCarriedHumans(int number);
 
         event Action<SystemData> UpdateSystemData;
+        public event Action<int> UpdateNumberOfCarriedHumans;
     }
 }

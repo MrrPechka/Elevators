@@ -49,10 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CreateHuman.cs" />
+    <Compile Include="Elevator.cs" />
     <Compile Include="FactoryOfHumans.cs" />
+    <Compile Include="Floor.cs" />
     <Compile Include="Human.cs" />
+    <Compile Include="IKeepHuman.cs" />
     <Compile Include="ISettings.cs" />
     <Compile Include="ISimulation.cs" />
+    <Compile Include="MoveHuman.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\HumanCreateService.cs" />
